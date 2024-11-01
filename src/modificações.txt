@@ -1,0 +1,16 @@
+ESTE ARQUIVO DEVE SER UTLIZADO PARA COMENTAR AS MUDANÇAS REALIZADAS NO PROJETO "APS-CREDITO-CARBONO"
+CADA MODIFICAÇÃO DEVE PREFERENCIALMENTE SER COMENTADA PARA MELHOR ENTENDIMENTO DA EQUIPE COM A DATA, QUEM O MODIFICOU E O QUE REALIZOU
+
+
+
+Dia 27/08 João Pedro Silva
+
+Criou a pasta "html" e colocou o arquivo intro.html nela para isso apagou a pasta "html_links" e a web design
+colocou todos os arquivos css em um único arquivo como solicitado
+colocou o estilo fora das imagens
+crieou a pasta APS (pasta principal) e a pasta src
+criou o texto da página intro
+
+Dia 27/8 Daniel
+
+Criou o design da página intro
