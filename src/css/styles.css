@@ -1,0 +1,351 @@
+body {
+    margin: 0; /* define como 0 a margin do body*/ 
+    font-family: 'Nunito', sans-serif; /* Adiciona a fonte 'nunito'ao documento.
+     Se ela não estiver disponível, uma fonte sem serifa (sans serif) genêrica é aplicada. */
+
+
+}
+
+
+
+a {
+    color: #2E94CC
+}
+
+header {
+    background-color: #3b9869e6;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    padding-bottom: 25px;
+    font-size: 24px;
+    letter-spacing: 0.6px; /* define o espaçamento entre as letras como 0.6px*/
+    line-height: 30px; /* "Difine a altura da linha para 30px"*/
+
+}
+
+
+article {
+    max-width: 850px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    opacity: 0.9; /* Define a opaciade do article para 0.9 (1.0 = 100%)*/
+
+}
+
+@keyframes slideInFromLeft {
+    0% { /*Animação começa (0%) em -100% do eixo X em relação a onde o conteudo com a animação está */
+      transform: translateX(-100%);
+    }
+    100% { /* no fim da animação (100%) o elemento com a animação está na sua posição inicial (0 do eixo X)  */
+      transform: translateX(0);
+      
+    }
+  }
+  
+.navbar-items {  
+    
+    animation: 3s ease-out 0s 1 slideInFromLeft; /*3s: duração da aniação; ease-out:
+     tipo de animação (diminuui a velocidade conforme ocorre a animação; 0s: "delay para começar a animação"
+     slideFromLeft: nome da animação. */ 
+  }
+  
+
+.post-author {
+    color: #6C6C6C;
+    font-size: 12px;
+    line-height: 18px; /* Define a altura da linha para 18px */
+}
+
+.share-post,
+.links-title {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.links-title {
+    margin-bottom: 12px;
+}
+
+.share-post span {
+    margin-right: 4px;
+}
+
+.share-post img {
+    vertical-align: middle; /* Alinha verticamente (eixo Y) a imagem no centro  */
+}
+
+.uppercase {
+    text-transform: uppercase; /* Faz com que todas as letras com essa classe sejam trasnformados em letra maiúscula.*/
+    text-align: center;
+}
+
+
+.hero-image {
+    margin: 0; /* Margin 0 para todos os as direções (cima, baixo, esquerda e direita) */
+
+}
+
+.hero-image img {
+    max-width: 100%; /* A  largura máxima da imagem é igual a 100% da largura padrão da imagem*/
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 52px;
+    letter-spacing: 1.3px;
+    line-height: 58px;
+}
+
+article p {
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+#content-section {
+    
+    margin: auto;
+    background-color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+iframe {
+    margin: 50px 0;
+    max-width: 100%;
+}
+
+footer {
+    background-color: white;
+    max-width: 680px;
+    margin: auto;
+    padding: 20px 15px; /* 20px é o espaçamento interno de cima e de baixo. 15 é o da esquera e da direita */
+    opacity: 1;
+}
+
+footer ul {
+    list-style-type: none; /* A lista não possui nenhuma forma especial, como circle.*/
+    margin: 0;
+    padding-inline-start: 0; /* espaçamento interno do começo do elemnto inline*/
+    margin-bottom: 70px;
+}
+
+footer a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+
+footer ul li {
+    margin-bottom: 12px;
+}
+
+footer ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+
+nav {
+    position: relative; /* Posição relativa ao elemento pai (Body) */
+}
+
+.navbar-items {
+    right: 0;
+    height: 60px;
+    gap: 5px;
+    margin-left: 0;
+    display: block; /* Trata os itens da navbar, como se o elemento fosse um elemento tipo block*/
+
+    
+
+}
+
+.navbar-items li {
+    display: inline-block; /* A altura do elemento é definido pelo elemento e só ocorre a quebra de linha
+     (próximo elemento é posicionado na "linha de baixo" */
+    text-transform: uppercase;
+    margin-left: 0px;
+
+
+}
+
+.navbar-items a {
+    color: rgb(0, 13, 70);
+    text-decoration: none; /* Não adiciona nehum estilo ao texto, como underline.*/
+    transition: 0.5s;
+    margin-right: 20px;
+
+}
+
+.navbar-items a:hover {
+    color: green;
+
+}
+
+.navbar .navbar-items {
+    margin-left: -10px;
+
+
+}
+
+
+/*Css da calculadora */
+
+.box {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+}
+
+.box.active {
+    display: flex;
+    opacity: 1;
+    margin-left: auto; /* Para centralizar a caixa */
+    margin-right: auto; /* Para centralizar a caixa */
+}
+
+.box img {
+    max-height: 150px; /* Aumente o tamanho da imagem */
+    width: auto; /* Mantém a proporção */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.box input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Ajustes para centralizar o botão */
+.button-container {
+    display: flex; /* Torna o container flexível */
+    justify-content: center; /* Centraliza o botão */
+    width: 100%; /* Para ocupar a largura da caixa */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#calculateContainer {
+    display: none; 
+}
+
+#calculateContainer #result {
+   
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilos da página "quem somos"*/
+
+.galeria {
+    position: relative; /* A posição dele é relativa ao elemento pai  */
+    text-align: center;
+}
+
+.galeria img{
+    width: 400px;
+    height: 200px;
+    transition: opacity 0.5s ease;
+}
+
+.legenda {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 1em;
+}
+.quem-somos {
+    text-align: left;
+    padding-left:  10px;
+}
+
+.container {
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px; /* Define o reaio da borda ao redor do card*/
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 400px;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+#combustivelOptions {
+    margin-top: 0px; /* Espaço acima das checkboxes */
+}
+#combustivelOptions label {
+    display: inline-block; /* Para ficar lado a lado */
+    margin-right: 10px; /* Espaçamento entre as checkboxes */
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

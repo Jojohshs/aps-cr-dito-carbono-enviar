@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Transição de Caixas com Um Botão</title>
+    <script src="../js/calculadora.js" defer></script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>PegadaGreen.org</h1>
+    </header>
+
+    <article>
+        <div class="navbar">
+            <nav>
+                <ul class="navbar-items">
+                    <ul class="navbar-items">
+                        <li> <a href="/index.html">Página inicial</a></li> <!--Link para página inicial--->
+
+                        <li> <a href="../html/intro.html">Introdução</a></li> <!--Link para página introdução--->
+    
+                        <li> <a href="../html/quem-somos.html"> quem somos</a></li> <!--Link para página quem somos--->
+    
+                        <li><a href="../html/explicacao.html"> como funciona o calculo</a></li> <!--Link para página da explicação do cálculo--->
+                        <li>
+                            <a href="../html/calculadora.html">Calculadora</a> <!--Link para página da calculadora--->
+                        </li>
+  
+                </ul>
+            </nav>
+        </div>
+
+        <section id="content-section">
+            <h2 class="uppercase">Calcule agora</h2>
+            <p>O presente projeto foi pensado pelos alunos João Pedro Silva, Daniel Mantilha, Derick, João Pinheiro e Gabriel, como o objetivo de criar um site com o tema “Créditos de Carbono”.</p>
+            
+            <div class="box active">
+                <img src="../img/carro.png" alt="">
+                <input id="eficienciaVeiculo" type="text" placeholder="Insira a eficiência do veículo: ">
+            </div>
+
+            <div class="box">
+                <img src="../img/carro.png" alt="">
+                <input id="kmRodados" type="text" placeholder="Insira a quantidade de km rodados para o trajeto: ">
+            </div>
+
+            <div class="box">
+                <img src="../img/carro.png" alt="">
+                <input id="box1" type="text" placeholder="Insira a quantidade de veículos que a empresa possui: ">
+            </div>
+
+            <div class="box">
+                <img src="../img/bomba-de-gasolina.png" alt=""> 
+                <input id="box2" type="text" placeholder="Insira o valor em litros de gasolina: ">
+            </div>
+
+            <div class="box">
+                <img src="../img/servico-eletrico.png" alt="">
+                <input id="eficienciaEnergia" type="text" placeholder="Insira a eficiência energética: ">
+            </div>
+
+            <div class="box">
+                <img src="../img/servico-eletrico.png" alt="">
+                <input id="box3" type="text" placeholder="Insira o valor em kWh: ">
+            </div>
+            
+            <div class="button-container">
+                <button id="nextButton">Próximo</button>
+            </div>
+
+            <div id="calculateContainer" style="display: none;">
+                <div class="button-container">
+                    <button id="calculateButton">Calcular Soma</button>
+                </div>
+                <div id="result" class="result"></div>
+            </div>
+        </section>
+    </article>
+</body>
+</html>

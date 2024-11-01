@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicação do cálculo</title>
+    <link rel="stylesheet" href="../css/styles.css"> <!--Link para o CSS-->
+    <script src="../js/checkbox.js" defer></script> <!--Link para o JS-->
+</head>
+<body>
+
+    <header>
+        <h1>PegadaGreen.org</h1>
+    </header>
+
+    <article>
+        <div class="navbar">
+            <nav>
+                <ul class="navbar-items">
+                    <ul class="navbar-items">
+                        <li> <a href="/index.html">Página inicial</a></li> <!--Link para página inicial--->
+
+                        <li> <a href="../html/intro.html">Introdução</a></li> <!--Link para página introdução--->
+    
+                        <li> <a href="../html/quem-somos.html"> quem somos</a></li> <!--Link para página quem somos--->
+    
+                        <li><a href="../html/explicacao.html"> como funciona o calculo</a></li> <!--Link para página da explicação do cálculo--->
+                        <li>
+                            <a href="../html/calculadora.html">Calculadora</a> <!--Link para página da calculadora--->
+                        </li>
+                </ul>
+            </nav>
+        </div>
+
+        <h2 class="uppercase">Explicação do cálculo</h2>
+
+        <section class="hero-image">
+            <img src="../img/illustration-concept-budget-familial_114360-16979.avif" alt="Imagem de árvores e fábricas">
+        </section>
+
+        <p>Para saber como é realizado o cálculo de carbono, apenas leia essa página.</p>
+
+        <label for="calculo">Clique em uma opção abaixo para saber o respectivo cálculo:</label>
+        <input type="checkbox" name="combustivel" id="combustivel"> Combustível
+        <input type="checkbox" name="energia" id="energia"> Energia
+
+        <div class="button-container">
+            <button onclick="mostrarSelecionados()">Mostrar Selecionados</button>
+        </div>
+
+        <div class="results hidden" id="resultados"></div>
+        <div id="card-container" class="hidden"></div> <!-- Contêiner para os cards -->
+    </article>
+
+</body>
+</html>
